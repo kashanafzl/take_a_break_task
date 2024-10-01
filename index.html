@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./img/logo.png">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <!-- icon cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -103,7 +105,7 @@
 
 
 <div class="bg">
-    <div class="content">
+    <div  data-aos="fade-right" class="content">
         <h1>Last Days to Save on Hot Tubs, <br> Swim Spas & Cold Plunge!</h1>
         <p>Massive discounts on 40+ models during our September Sale!
             <br>
@@ -115,13 +117,13 @@
 
 <!-- second section -->
 
-<div class="secondsectiondiv">
+<div  data-aos="fade-right" class="secondsectiondiv">
     <h2>SHOP BY CATEGORY</h2>
     <h1>Our Products</h1>
 </div>
 
 
-<div class="maincardflex">
+<div  data-aos="fade-up" class="maincardflex">
     <div class="flip-card">
         <div class="flip-card-inner">
             <div class="flip-card-front">
@@ -276,7 +278,7 @@
 </div>
 
 
-<div class="mainthreesection">
+<div data-aos="fade-up" class="mainthreesection">
     <div class="mainsection3">
         <img class="section3img1" src="./img/bb1.jpg" alt="">
         <img class="section3img2" src="./img/bb2.webp" alt="">
@@ -324,20 +326,20 @@
 
 
 <div class="bg3div">
-    <div class="overlay">
-        <h1>Catering to Your Family-Friendly Backyard Lifestyle</h1>
+    <div  class="overlay">
+        <h1 data-aos="fade-up-right">Catering to Your Family-Friendly Backyard Lifestyle</h1>
         <p>At Take A Break Spas & Billiards, we’re here to help you make lasting memories with family and friends alike. No matter your wants, needs or budget, we have a wide range of products, brands and solutions to help make your dreams a reality. Whether you’re looking to sharpen your pool skills or relax at the end of a long day in the spa, we’re here to help.
         </p>
     </div>
 </div>
 
-<div class="section4div">
+<div data-aos="fade-up-right" class="section4div">
     <h2>Featured Hot Tubs</h2>
     <h1>Shop Our Best-Selling Hot Tubs</h1>
     <p>Let’s bring your home and backyard to life with the right hot tub.</p>
 </div>
 
-<div class="mainflex4card">
+<div   data-aos="flip-left" class="mainflex4card">
     <div class="tcard">
         <img class="t1img" src="./img/t1.png" alt="">
         <h2>Jacuzzi</h2>
@@ -454,7 +456,7 @@
             <p>With both home and commercial-grade Skee-ball in three different colors, we’re sure to have the perfect model for you! Call us to get your quote today!</p>
         </div>
         
-        <div class="mainflex4card">
+        <div  data-aos="flip-left" class="mainflex4card">
             <div class="tcard">
                 <img class="t1img" src="./img/t3.jpg" alt="">
                 <h2>Jacuzzi</h2>
@@ -746,7 +748,10 @@
     </div>
 
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     
 </body>
 </html>
