@@ -1,6 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   margin: 0;
@@ -17,8 +15,7 @@ html {
   /*   --greencolor: #cf742a; */
 }
 
-
-body{
+body {
   /* font-family: "Poppins", sans-serif; */
   font-family: "Inter", sans-serif;
 }
@@ -57,13 +54,12 @@ body{
   color: var(--greencolor);
 }
 
-
 /* navbar */
 
 /* Basic styles */
 ul {
   list-style-type: none;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 li {
@@ -94,7 +90,6 @@ li {
 
 .dropdown-menu li {
   padding: 10px;
-
 }
 
 .dropdown-menu li a {
@@ -108,9 +103,8 @@ li {
   background-color: #f1f1f1;
 }
 
-
 .dropdown:hover .dropdown-menu {
-  display: block; 
+  display: block;
 }
 
 /* Icon style */
@@ -118,8 +112,7 @@ li {
   margin-left: 5px;
 }
 
-
-.navbardiv{
+.navbardiv {
   display: flex;
   align-items: center;
   padding-inline: 4rem;
@@ -127,12 +120,12 @@ li {
   justify-content: space-between;
 }
 
-.dropdownlimain{
+.dropdownlimain {
   display: flex;
   align-items: center;
 }
 
-.btndiv button{
+.btndiv button {
   border: none;
   font-size: 1.6rem;
   background-color: var(--greencolor);
@@ -142,31 +135,36 @@ li {
   font-weight: bold;
 }
 
+.btndiv button:hover {
+  background: #000;
+  color: #ffff;
+}
+
 /* mainsection */
 
 .bg {
-  position: relative; 
+  position: relative;
   height: 100vh;
   background: #000;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .bg::before {
-  content: ""; 
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('./img/bg.webp');
+  background-image: url("./img/bg.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.6; 
+  opacity: 0.6;
   z-index: 0;
 }
 
 .content {
-  position: relative; 
+  position: relative;
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -184,7 +182,7 @@ li {
 .content p {
   font-size: 2.5rem;
   color: #fff;
-  text-align: center; 
+  text-align: center;
 }
 
 .content button {
@@ -198,29 +196,34 @@ li {
   margin-top: 3rem;
 }
 
-.secondsectiondiv{
+.content button:hover {
+  background: #000;
+  color: #ffff;
+}
+
+.secondsectiondiv {
   text-align: center;
   padding-block: 6rem;
 }
 
-.secondsectiondiv h2{
+.secondsectiondiv h2 {
   font-size: 2rem;
   color: var(--greencolor);
 }
 
-.secondsectiondiv h1{
+.secondsectiondiv h1 {
   font-size: 6em;
   padding-top: 1rem;
 }
 
 .flip-card {
-  border-radius: 2rem;  
+  border-radius: 2rem;
   cursor: pointer;
   background-color: transparent;
-  width: 320px; 
-  height: 300px; 
-  perspective: 1000px; 
-  margin: 20px; 
+  width: 320px;
+  height: 300px;
+  perspective: 1000px;
+  margin: 20px;
 }
 
 .flip-card-inner {
@@ -228,34 +231,33 @@ li {
   background: #000;
   border-radius: 2rem;
   width: 100%;
-height: 300px;
+  height: 300px;
   transition: transform 0.6s;
-  transform-style: preserve-3d; 
+  transform-style: preserve-3d;
 }
 
 .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg); 
+  transform: rotateY(180deg);
 }
 
 .flip-card-front,
 .flip-card-back {
-
   position: absolute;
   background: #000;
   color: #fff;
   opacity: 0.8;
   width: 100%;
-height: 300px;
+  height: 300px;
   backface-visibility: hidden;
 }
 
 .flip-card-front {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 2rem;
 }
 
 .flip-card-back {
-  background-color: black; 
+  background-color: black;
   color: #fff;
   transform: rotateY(180deg);
   padding: 50px;
@@ -263,11 +265,11 @@ height: 300px;
   text-align: center;
 }
 
-.flip-card-back h1{
+.flip-card-back h1 {
   font-size: 2.5rem;
 }
 
-.flip-card-back p{
+.flip-card-back p {
   font-size: 1.4rem;
   padding-top: 1rem;
 }
@@ -283,43 +285,43 @@ height: 300px;
 /* Centered content overlay */
 .content-overlay {
   position: absolute;
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  color: white; 
+  color: white;
 }
 
 .content-overlay i {
   font-size: 5rem;
   color: #fff;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 
 .content-overlay h1 {
-  color: white; 
-  font-size: 3rem; 
+  color: white;
+  font-size: 3rem;
   margin: 10px 0;
 }
 
 /* Button styles on the back */
 .flip-card-back button {
   font-size: 1.8rem;
-  margin-top: 15px; 
+  margin-top: 15px;
   padding: 10px 20px;
-  border: none; 
-  background-color: var(--greencolor); 
-  color: white; 
-  cursor: pointer; 
-  border-radius: 5px; 
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border: none;
+  background-color: var(--greencolor);
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .flip-card-back button:hover {
   background-color: darkgreen; /* Change button color on hover */
 }
 
-.maincardflex{
+.maincardflex {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -327,43 +329,144 @@ height: 300px;
   padding-block: 1rem;
 }
 
+.section3img1 {
+  width: 400px;
+  border-right: 5rem solid var(--greencolor);
+}
 
-@media screen and (max-width:800px) {
-  .mainnavbar{
+.mainthreesection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: space-between;
+  padding-inline: 7rem;
+  padding-block: 5rem;
+}
+
+.mainsection3 {
+  position: relative;
+  flex: 1;
+}
+
+.mainthreecontent {
+  flex: 1;
+}
+
+.mainthreecontent h1 {
+  font-size: 6rem;
+}
+
+.mainthreecontent p {
+  font-size: 1.6rem;
+  line-height: 3rem;
+  text-align: justify;
+  color: gray;
+  padding-block: 2rem;
+}
+
+#tickicon {
+  background-color: var(--greencolor);
+  padding: 0.5rem;
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 100%;
+}
+
+.mainthreecontent span {
+  font-size: 1.4rem;
+  padding-left: 1rem;
+}
+
+.section3img2 {
+  position: absolute;
+  left: 200px;
+  top: 70px;
+  width: 300px;
+  border: 2rem solid #fff;
+}
+
+.italivtext {
+  font-size: 1.5rem;
+  color: gray;
+  margin-bottom: 5rem;
+}
+
+.mainthreecontent button {
+  border: none;
+  font-size: 1.6rem;
+  background-color: var(--greencolor);
+  color: #fff;
+  cursor: pointer;
+  margin-top: 2rem;
+  padding: 2rem;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.mainthreecontent button:hover {
+  background: #000;
+  color: #ffff;
+  margin-top: -2px;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 800px) {
+  .mainnavbar {
     display: none;
   }
-  .navbardiv{
+  .navbardiv {
     display: none;
   }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width: 500px) {
   .content h1 {
     font-size: 2.4rem;
     line-height: 4rem;
     padding-block: 2rem;
- 
+  }
+
+  .content p {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+
+  .secondsectiondiv h1 {
+    font-size: 4em;
+    padding-top: 1rem;
+  }
+  .content-overlay h1 {
+    color: white;
+    font-size: 2rem;
+    margin: 10px 0;
+  }
+  .flip-card-back {
+    padding: 20px;
+  }
+
+  .section3img1 {
+    width: 300px;
+    border-right: 5rem solid var(--greencolor);
+}
+.section3img2 {
+  position: absolute;
+  left: 97px;
+  top: 65px;
+  width: 245px;
+  border: 2rem solid #fff;
+}
+.mainthreecontent h1 {
+  font-size: 4rem;
+  line-height: 6rem;
 }
 
-.content p {
-  font-size: 1.5rem;
-  line-height: 3rem;
+.mainthreesection {
+  padding-inline: 4rem;
 
 }
 
-.secondsectiondiv h1 {
-  font-size: 4em;
-  padding-top: 1rem;
-}
-.content-overlay h1 {
-  color: white;
-  font-size: 2rem;
-  margin: 10px 0;
-}
-.flip-card-back {
-
-  padding: 20px;
-
+.maincardflex{
+  padding-inline: 4rem;
 }
 
 }
