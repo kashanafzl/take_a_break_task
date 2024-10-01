@@ -1,0 +1,369 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --greencolor: #18968b;
+  /*   --greencolor: #cf742a; */
+}
+
+
+body{
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Inter", sans-serif;
+}
+
+.mainnavbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 7rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+.mainnavbar h2 {
+  font-size: 2rem;
+}
+
+.locationdiv {
+  display: flex;
+  padding: 1.5rem;
+  align-items: center;
+  gap: 2rem;
+}
+
+#location {
+  font-size: 1.6rem;
+}
+
+.locationdiv p {
+  font-size: 1.5rem;
+}
+
+.locationdiv p:hover {
+  cursor: pointer;
+  color: var(--greencolor);
+}
+
+
+/* navbar */
+
+/* Basic styles */
+ul {
+  list-style-type: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+li {
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+  font-size: 1.6rem;
+  color: var(--greencolor);
+  font-weight: 700;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+  display: none; /* Hidden by default */
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px 0;
+  margin-top: 10px;
+  width: 200px;
+  z-index: 1000;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu li {
+  padding: 10px;
+
+}
+
+.dropdown-menu li a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 1rem;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f1f1f1;
+}
+
+
+.dropdown:hover .dropdown-menu {
+  display: block; 
+}
+
+/* Icon style */
+.fa-angle-down {
+  margin-left: 5px;
+}
+
+
+.navbardiv{
+  display: flex;
+  align-items: center;
+  padding-inline: 4rem;
+  padding-block: 20px;
+  justify-content: space-between;
+}
+
+.dropdownlimain{
+  display: flex;
+  align-items: center;
+}
+
+.btndiv button{
+  border: none;
+  font-size: 1.6rem;
+  background-color: var(--greencolor);
+  color: #fff;
+  cursor: pointer;
+  padding: 2rem;
+  font-weight: bold;
+}
+
+/* mainsection */
+
+.bg {
+  position: relative; 
+  height: 100vh;
+  background: #000;
+  overflow: hidden; 
+}
+
+.bg::before {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('./img/bg.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6; 
+  z-index: 0;
+}
+
+.content {
+  position: relative; 
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15rem;
+}
+
+.content h1 {
+  font-size: 6rem;
+  color: #fff;
+  text-align: center;
+}
+
+.content p {
+  font-size: 2.5rem;
+  color: #fff;
+  text-align: center; 
+}
+
+.content button {
+  border: none;
+  font-size: 1.6rem;
+  background-color: var(--greencolor);
+  color: #fff;
+  cursor: pointer;
+  padding: 2rem;
+  font-weight: bold;
+  margin-top: 3rem;
+}
+
+.secondsectiondiv{
+  text-align: center;
+  padding-block: 6rem;
+}
+
+.secondsectiondiv h2{
+  font-size: 2rem;
+  color: var(--greencolor);
+}
+
+.secondsectiondiv h1{
+  font-size: 6em;
+  padding-top: 1rem;
+}
+
+.flip-card {
+  border-radius: 2rem;  
+  cursor: pointer;
+  background-color: transparent;
+  width: 320px; 
+  height: 300px; 
+  perspective: 1000px; 
+  margin: 20px; 
+}
+
+.flip-card-inner {
+  position: relative;
+  background: #000;
+  border-radius: 2rem;
+  width: 100%;
+height: 300px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d; 
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg); 
+}
+
+.flip-card-front,
+.flip-card-back {
+
+  position: absolute;
+  background: #000;
+  color: #fff;
+  opacity: 0.8;
+  width: 100%;
+height: 300px;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  border-radius: 2rem;
+}
+
+.flip-card-back {
+  background-color: black; 
+  color: #fff;
+  transform: rotateY(180deg);
+  padding: 50px;
+  border-radius: 2rem;
+  text-align: center;
+}
+
+.flip-card-back h1{
+  font-size: 2.5rem;
+}
+
+.flip-card-back p{
+  font-size: 1.4rem;
+  padding-top: 1rem;
+}
+
+/* Image styles */
+.flip-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+/* Centered content overlay */
+.content-overlay {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  color: white; 
+}
+
+.content-overlay i {
+  font-size: 5rem;
+  color: #fff;
+  margin-bottom: 10px; 
+}
+
+.content-overlay h1 {
+  color: white; 
+  font-size: 3rem; 
+  margin: 10px 0;
+}
+
+/* Button styles on the back */
+.flip-card-back button {
+  font-size: 1.8rem;
+  margin-top: 15px; 
+  padding: 10px 20px;
+  border: none; 
+  background-color: var(--greencolor); 
+  color: white; 
+  cursor: pointer; 
+  border-radius: 5px; 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.flip-card-back button:hover {
+  background-color: darkgreen; /* Change button color on hover */
+}
+
+.maincardflex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-inline: 6rem;
+  padding-block: 1rem;
+}
+
+
+@media screen and (max-width:800px) {
+  .mainnavbar{
+    display: none;
+  }
+  .navbardiv{
+    display: none;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .content h1 {
+    font-size: 2.4rem;
+    line-height: 4rem;
+    padding-block: 2rem;
+ 
+}
+
+.content p {
+  font-size: 1.5rem;
+  line-height: 3rem;
+
+}
+
+.secondsectiondiv h1 {
+  font-size: 4em;
+  padding-top: 1rem;
+}
+.content-overlay h1 {
+  color: white;
+  font-size: 2rem;
+  margin: 10px 0;
+}
+.flip-card-back {
+
+  padding: 20px;
+
+}
+
+}
