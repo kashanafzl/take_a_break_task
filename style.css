@@ -417,6 +417,17 @@ li {
   .navbardiv {
     display: none;
   }
+  .maincardflex{
+    display: flex;
+    justify-content: center;
+  }
+
+  .content h1 {
+    font-size: 5rem;
+    color: #fff;
+    padding-block: 3rem;
+    text-align: center;
+}
 }
 
 @media screen and (max-width: 500px) {
